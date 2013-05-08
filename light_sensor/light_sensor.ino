@@ -138,8 +138,8 @@ void hulu(int tonePin) {
   for(int x=0;x<length;x++)//循环音符的次数
     {
       tone(tonePin,tune[x]);//此函数依次播放tune序列里的数组，即每个音符
-      delay(400*duration[x]);//每个音符持续的时间，即节拍duration，400是调整时间的越大，曲子速度越慢，越小曲子速度越快，自己掌握吧
+      delay(380*duration[x]);//每个音符持续的时间，即节拍duration，400是调整时间的越大，曲子速度越慢，越小曲子速度越快，自己掌握吧
       noTone(tonePin);//停止当前音符，进入下一音符
     }
-  delay(5000);//等待5秒后，循环重新开始
+  delay(1000);//等待5秒后，循环重新开始
 }
